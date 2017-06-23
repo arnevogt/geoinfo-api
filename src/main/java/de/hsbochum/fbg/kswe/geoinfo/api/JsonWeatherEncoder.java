@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 public class JsonWeatherEncoder {
 
     public String encode(Weather obj) {
+ 
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode node = mapper.createObjectNode();
         
@@ -24,6 +25,8 @@ public class JsonWeatherEncoder {
         tempNode.put("value", obj.getTemp());
         tempNode.put("unit", "C");
         weatherNode.set("temperatur", tempNode);
+        
+        node.set("phenomena", weatherNode);
         
         return node.toString();
     }
