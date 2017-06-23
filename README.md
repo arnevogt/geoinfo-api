@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/arnevogt/geoinfo-api.svg?branch=master)](https://travis-ci.org/arnevogt/geoinfo-api)
+
 # KSwe SoSe 2017 - Aufgabe 8
 
 Debugging und Continuous Integration.
